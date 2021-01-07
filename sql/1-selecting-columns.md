@@ -2,9 +2,13 @@
 ### 66 days of data
 
 Daily overview: Selecionando colunas
+
 LINK: https://campus.datacamp.com/courses/introduction-to-sql/filtering-rows?ex=1
+
 Learning: SQL
+
 Productiveness: ⭐️⭐️⭐️⭐️
+
 Status: In progress
 
 # Introdução ao SQL - Selecionando colunas
