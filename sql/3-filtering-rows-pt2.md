@@ -1,9 +1,13 @@
 # FOUR
 
 Daily overview: Filtrando linhas das tabelas - pt.2 (IN, OR, BETWEEN, NULL, LIKE)
+
 LINK: https://campus.datacamp.com/courses/introduction-to-sql/filtering-rows?ex=6
+
 Learning: SQL
+
 Productiveness: ⭐️⭐️⭐️⭐️⭐️
+
 Status: In progress
 
 # Introdução ao SQL - Filtrando linhas das tabelas - pt.2
