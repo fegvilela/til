@@ -14,7 +14,7 @@ Status: In progress
 
 (`ORDER BY`)
 
-### Ordenando um resultado com base em alguma coluna
+### Ordenando resultados com base em uma coluna
 
 ```sql
 SELECT first_name
@@ -37,4 +37,23 @@ dado com brewing_date mais atual...
 .
 .
 dado com brewing_date mais antiga
+```
+
+### Ordenando resultados com base em múltiplas colunas
+
+Pode-se utilizar a ordenação por mais de uma coluna, nesse caso, a ordenação respeitará a ordem das colunas apresentadas na *query*
+
+```sql
+SELECT release_year, album, artist
+FROM songs
+WHERE artist = 'Nirnava' OR artist = 'Pearl Jam'
+ORDER BY release_year, album;
+
+---- resultado -----
+
+release_year     album        artist
+		...		        ...           ...
+	 1991        Nevermind      Nirvana   
+	 1991           Ten        Pearl Jam
+    ...           ...           ...
 ```
