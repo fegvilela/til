@@ -52,8 +52,8 @@ ORDER BY release_year, album;
 ---- resultado -----
 
 release_year     album        artist
-		...		        ...           ...
-	 1991        Nevermind      Nirvana   
-	 1991           Ten        Pearl Jam
+    ...           ...           ...
+    1991        Nevermind     Nirvana   
+    1991          Ten        Pearl Jam
     ...           ...           ...
 ```
