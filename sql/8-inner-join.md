@@ -12,7 +12,7 @@ Essa operação serve para "juntar" tabelas, baseando-se em um ou mais "valores-
 
 Vamos usar essa estrutura de dados relacional para os exemplos. 
 
-![https://relational.fit.cvut.cz/assets/img/datasets-generated/university.svg](https://relational.fit.cvut.cz/assets/img/datasets-generated/university.svg)
+![img/inner-join.png](img/inner-join.png)
 
 ### Com uma tabela
 
