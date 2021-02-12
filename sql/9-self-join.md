@@ -1,10 +1,10 @@
 # TEN
 
-Daily overview: self join - pt. 1
+Daily overview: self join
 LINK: https://campus.datacamp.com/courses/joining-data-in-postgresql/introduction-to-joins?ex=9
 Learning: SQL
 Productiveness: ⭐️⭐️
-Status: In progress
+Status: Complete
 
 # SQL Join - Self-join usando INNER JOIN
 
