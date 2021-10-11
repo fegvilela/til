@@ -1,12 +1,6 @@
-# ELEVEN
-
-Daily overview: case, when, else, into (categorização)
-LINK: https://campus.datacamp.com/courses/joining-data-in-postgresql/introduction-to-joins?ex=10
-Learning: SQL
-Productiveness: ⭐️⭐️⭐️
-Status: Complete
-
 # SQL Join - CASE, WHEN, ELSE, INTO
+
+[ ◀ _previous_ ](https://github.com/fegvilela/til/blob/main/sql/09-self-join.md)| [ 🏠 ](https://github.com/fegvilela/til/tree/main/sql)
 
 Estrutura condicional para separarmos os dados em grupos, de acordo com critérios que estabelecemos.
 
@@ -14,7 +8,7 @@ Vamos utilizar novamente o exemplo de cervejas. Queremos classificá-las de acor
 
 ```sql
 -- MODELO DA TABELA --
--- -- -- -- -- -- -- -- 
+-- -- -- -- -- -- -- --
 -------- BEERS ------
 --| name    varchar |
 --| beer_id     int |
@@ -23,7 +17,7 @@ Vamos utilizar novamente o exemplo de cervejas. Queremos classificá-las de acor
 ----------------------
 ```
 
-### Utilizando CASE, WHEN, ELSE para categorização
+## Utilizando `CASE`, `WHEN`, `ELSE` para categorização
 
 ```sql
 SELECT name, fab_date
@@ -32,7 +26,7 @@ SELECT name, fab_date
 			 ELSE 'new' END
 	AS age_group
 FROM beers;
-	
+
 ```
 
 Também podemos querer criar uma nova tabela (`beers_age`) com essa nova organização dos dados em categorias. Para isso, podemos usar o `INTO`
@@ -45,5 +39,14 @@ SELECT name, fab_date
 	AS age_group
 FROM beers
 INTO beers_age;
-	
+
 ```
+
+---
+
+_66 days of data (11/66)_ \
+https://campus.datacamp.com/courses/joining-data-in-postgresql/introduction-to-joins?ex=10
+
+---
+
+[ ◀ _previous_ ](https://github.com/fegvilela/til/blob/main/sql/09-self-join.md)| [ 🏠 ](https://github.com/fegvilela/til/tree/main/sql)

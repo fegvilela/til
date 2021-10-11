@@ -1,8 +1,4 @@
-# today-i-learned
-
-Brief summaries of my brief studies
-
-### [SQL](https://github.com/fegvilela/til/tree/main/sql)
+# SQL
 
 - [Select Columns](https://github.com/fegvilela/til/blob/main/sql/01-selecting-columns.md)
 - [Filtering Rows 1](https://github.com/fegvilela/til/blob/main/sql/02-filtering-rows-pt1.md)
@@ -14,9 +10,3 @@ Brief summaries of my brief studies
 - [Inner Join](https://github.com/fegvilela/til/blob/main/sql/08-inner-join.md)
 - [Self Join](https://github.com/fegvilela/til/blob/main/sql/09-self-join.md)
 - [Conditional and into](https://github.com/fegvilela/til/blob/main/sql/10-case%2Cwhen%2Celse%2Cinto.md)
-
-</br>
-
-### [Database Design](https://github.com/fegvilela/til/tree/main/database-design)
-
-- [OLAP vs OLTP](https://github.com/fegvilela/til/blob/main/database-design/01-OLAP-vs-OLTP.md)

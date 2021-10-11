@@ -1,20 +1,10 @@
-# FOUR
-
-Daily overview: Filtrando linhas das tabelas - pt.2 (IN, OR, BETWEEN, NULL, LIKE)
-
-LINK: https://campus.datacamp.com/courses/introduction-to-sql/filtering-rows?ex=6
-
-Learning: SQL
-
-Productiveness: ⭐️⭐️⭐️⭐️⭐️
-
-Status: In progress
-
 # Introdução ao SQL - Filtrando linhas das tabelas - pt.2
 
 (`IN`, `OR`, `BETWEEN`, `NULL`, `LIKE`)
 
-### Filtrando linhas que contenham ao menos um dos valores (`OR`, `IN`)
+[◀ _previous_](https://github.com/fegvilela/til/blob/main/sql/02-filtering-rows-pt1.md) | [ _next_ ▶️ ](https://github.com/fegvilela/til/blob/main/sql/04-aggregate-functions-pt1.md)| [ 🏠 ](https://github.com/fegvilela/til/tree/main/sql)
+
+## Filtrando linhas que contenham ao menos um dos valores (`OR`, `IN`)
 
 ```sql
 SELECT title, author
@@ -41,7 +31,7 @@ FROM books
 WHERE published_year IN (1990, 1980, 1970, 1960);
 ```
 
-### Filtrando por valores em um *range* (`BETWEEN`)
+## Filtrando por valores em um _range_ (`BETWEEN`)
 
 Ou quando as opções são sequenciais entre dois valores, pode-se usar `BETWEEN`
 
@@ -61,7 +51,7 @@ WHERE published_year BETWEEN 1990 AND 1999;
 
 - `BETWEEN` é uma operação **inclusiva** então, incluiu os valores estabelecidos
 
-### Filtrando por valores que são nulos (`IS NULL`)
+## Filtrando por valores que são nulos (`IS NULL`)
 
 No exemplo, queremos pessoas que não possuem animais de estimação
 
@@ -71,9 +61,9 @@ FROM people
 WHERE pets IS NULL;
 ```
 
-### Filtrando por valores usando padrões, ao invés de um valor específico (`LIKE`, `NOT LIKE`, `%` , `_`)
+## Filtrando por valores usando padrões, ao invés de um valor específico (`LIKE`, `NOT LIKE`, `%` , `_`)
 
-Podemos usar uma parte do texto que queremos e os *wildcards(*`%` e `_`) nos ajudam a encontrar determinados padrões.
+Podemos usar uma parte do texto que queremos e os _wildcards(_`%` e `_`) nos ajudam a encontrar determinados padrões.
 
 `%` : vai procurar pela palavra exata ou por outras que comecem com essa palavra
 
@@ -88,7 +78,7 @@ Dalmata
 Daschund
 ```
 
-`_`: vai procurar pela palavra, aceitando qualquer letra no lugar desse *wildcard*
+`_`: vai procurar pela palavra, aceitando qualquer letra no lugar desse _wildcard_
 
 ```sql
 SELECT name
@@ -103,3 +93,12 @@ Nino
 ```
 
 O comando `NOT LIKE` vai filtrar por todos valores que não apresentam aquele padrão
+
+---
+
+_66 days of data (4/66)_ \
+https://campus.datacamp.com/courses/introduction-to-sql/filtering-rows?ex=6
+
+---
+
+[◀ _previous_](https://github.com/fegvilela/til/blob/main/sql/02-filtering-rows-pt1.md) | [ _next_ ▶️ ](https://github.com/fegvilela/til/blob/main/sql/04-aggregate-functions-pt1.md)| [ 🏠 ](https://github.com/fegvilela/til/tree/main/sql)

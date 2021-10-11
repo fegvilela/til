@@ -1,23 +1,17 @@
-# TEN
-
-Daily overview: self join
-LINK: https://campus.datacamp.com/courses/joining-data-in-postgresql/introduction-to-joins?ex=9
-Learning: SQL
-Productiveness: ⭐️⭐️
-Status: Complete
-
 # SQL Join - Self-join usando INNER JOIN
+
+[◀ _previous_](https://github.com/fegvilela/til/blob/main/sql/08-inner-join.md) | [ _next_ ▶️ ](https://github.com/fegvilela/til/blob/main/sql/10-case%2Cwhen%2Celse%2Cinto.md)| [ 🏠 ](https://github.com/fegvilela/til/tree/main/sql)
 
 Usamos `self join` quando os dados de uma tabela referenciam dados nela mesma. Alguns exemplos de aplicação:
 
 - buscar dados hierárquicos (contidos na mesma tabela)
 - comparação entre linhas da tabela
 
-### Buscar dados hierárquicos
+## Buscar dados hierárquicos
 
 ```sql
 -- MODELO DA TABELA --
--- -- -- -- -- -- -- -- 
+-- -- -- -- -- -- -- --
 -------- STAFFS ------
 --| name     varchar |
 --| staff_id     int |
@@ -34,11 +28,11 @@ ORDER BY
     manager;
 ```
 
-### Comparação entre linhas
+## Comparação entre linhas
 
 ```sql
 -- MODELO DA TABELA --
--- -- -- -- -- -- -- -- 
+-- -- -- -- -- -- -- --
 -------- BEERS ------
 --| name    varchar |
 --| beer_id     int |
@@ -63,6 +57,15 @@ nesse caso, usamos `>` ao invés de `<>` para que não venham dados duplicados p
 
 ```sql
 --   city   |   beer_1   |   beer_2   --
--- Brasília |     143    |    12   
+-- Brasília |     143    |    12
 -- Brasília |     12     |    143
 ```
+
+---
+
+_66 days of data (10/66)_ \
+ https://campus.datacamp.com/courses/joining-data-in-postgresql/introduction-to-joins?ex=9
+
+---
+
+[◀ _previous_](https://github.com/fegvilela/til/blob/main/sql/08-inner-join.md) | [ _next_ ▶️ ](https://github.com/fegvilela/til/blob/main/sql/10-case%2Cwhen%2Celse%2Cinto.md)| [ 🏠 ](https://github.com/fegvilela/til/tree/main/sql)
