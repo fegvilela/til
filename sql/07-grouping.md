@@ -1,22 +1,12 @@
-# EIGHT
-
-Daily overview: Agrupando resultados
-
-LINK: https://campus.datacamp.com/courses/introduction-to-sql/sorting-and-grouping?ex=6
-
-Learning: SQL
-
-Productiveness: ⭐️⭐️⭐️⭐️⭐️
-
-Status: In progress
-
 # Introdução ao SQL - Agrupando resultados
 
 (`ORDER BY`, `HAVING`)
 
+[◀ _previous_](https://github.com/fegvilela/til/blob/main/sql/06-sorting.md) | [ _next_ ▶️ ](https://github.com/fegvilela/til/blob/main/sql/08-inner-join.md)| [ 🏠 ](https://github.com/fegvilela/til/tree/main/sql)
+
 Geralmente, usa-se `GROUP BY` com funções de agregação
 
-### Agrupando por característica/campo
+## Agrupando por característica/campo
 
 ```sql
 
@@ -32,7 +22,7 @@ daschund     100
 ...          ...
 ```
 
-### Usando ordenação e agrupamento
+## Usando ordenação e agrupamento
 
 ```sql
 SELECT breed, COUNT(name)
@@ -48,7 +38,7 @@ dalmata      50
 ...          ...
 ```
 
-### Selecionando e filtrando dados com agrupamento
+## Selecionando e filtrando dados com agrupamento
 
 ```sql
 SELECT user_type, COUNT(first_name) AS total_users
@@ -63,7 +53,7 @@ admin             5
 user             200
 ```
 
-### Agrupando e usando funções de agregação como filtros (`HAVING`)
+## Agrupando e usando funções de agregação como filtros (`HAVING`)
 
 Para usar funções de agregação como filtro, precisamos usar o `HAVING` ao invés de `WHERE`
 
@@ -76,3 +66,12 @@ HAVING COUNT(grammy_awards) > 3;
 --- resultado ---
 vai mostrar as labels que possuem mais do que 3 albums premiados pelo grammy
 ```
+
+---
+
+_66 days of data (8/66)_ \
+https://campus.datacamp.com/courses/introduction-to-sql/sorting-and-grouping?ex=6
+
+---
+
+[◀ _previous_](https://github.com/fegvilela/til/blob/main/sql/06-sorting.md) | [ _next_ ▶️ ](https://github.com/fegvilela/til/blob/main/sql/08-inner-join.md)| [ 🏠 ](https://github.com/fegvilela/til/tree/main/sql)
